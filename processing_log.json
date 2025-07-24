@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-07-24T23:16:12.756869",
+    "message": "Starting email processing...",
+    "sender": null
+  },
+  {
+    "timestamp": "2025-07-24T23:16:12.869228",
+    "message": "Loaded 2 allowed senders",
+    "sender": null
+  },
+  {
+    "timestamp": "2025-07-24T23:16:15.309925",
+    "message": "Successfully connected to Gmail",
+    "sender": null
+  },
+  {
+    "timestamp": "2025-07-24T23:16:16.388608",
+    "message": "Found 0 unread emails with subject 'Local-weather-update'",
+    "sender": null
+  }
+]
