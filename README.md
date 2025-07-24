@@ -95,8 +95,8 @@ Edit `allowed_senders.xlsx` to add authorized email addresses:
 
 | email | name |
 |-------|------|
-| john.doe@example.com | John Doe |
-| jane.smith@company.com | Jane Smith |
+| nithinkola341@gmail.com | John Doe |
+| knithin.dev7@gmail.com | Jane Smith |
 
 ## Usage
 
@@ -204,17 +204,5 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create feature branch
-3. Add tests for new functionality
-4. Submit pull request
-
-## License
-
-This project is for educational/demonstration purposes.
-
----
 
 **Note**: This system processes emails automatically. Test thoroughly in a development environment before using with production Gmail accounts.
