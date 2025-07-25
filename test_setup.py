@@ -21,14 +21,14 @@ def test_environment():
         if not value or value.startswith('your_'):
             missing_vars.append(var)
         else:
-            print(f"✅ {var}: {'*' * len(value)}")
+            print(f"{var}: {'*' * len(value)}")
     
     if missing_vars:
-        print(f"\n❌ Missing or placeholder values for: {', '.join(missing_vars)}")
+        print(f"\n Missing or placeholder values for: {', '.join(missing_vars)}")
         print("Please edit your .env file with actual credentials.")
         return False
     else:
-        print("\n✅ All environment variables are configured!")
+        print("\n All environment variables are configured!")
         return True
 
 def test_dependencies():
@@ -48,17 +48,17 @@ def test_dependencies():
                 __import__('dotenv')
             else:
                 __import__(package.replace('-', '_'))
-            print(f"✅ {package}")
+            print(f"{package}")
         except ImportError:
             missing_packages.append(package)
-            print(f"❌ {package}")
+            print(f"{package}")
     
     if missing_packages:
-        print(f"\n❌ Missing packages: {', '.join(missing_packages)}")
+        print(f"\n Missing packages: {', '.join(missing_packages)}")
         print("Run: pip3 install -r requirements.txt")
         return False
     else:
-        print("\n✅ All dependencies are installed!")
+        print("\n All dependencies are installed!")
         return True
 
 def test_files():
@@ -74,16 +74,16 @@ def test_files():
     
     for file in required_files:
         if os.path.exists(file):
-            print(f"✅ {file}")
+            print(f" {file}")
         else:
             missing_files.append(file)
-            print(f"❌ {file}")
+            print(f" {file}")
     
     if missing_files:
-        print(f"\n❌ Missing files: {', '.join(missing_files)}")
+        print(f"\n Missing files: {', '.join(missing_files)}")
         return False
     else:
-        print("\n✅ All required files exist!")
+        print("\n All required files exist!")
         return True
 
 def main():
@@ -106,10 +106,10 @@ def main():
     print(f"Tests passed: {tests_passed}/{total_tests}")
     
     if tests_passed == total_tests:
-        print("\n🎉 Setup is complete! You can now run: python3 main.py")
+        print("\n Setup is complete! You can now run: python3 main.py")
         return 0
     else:
-        print("\n⚠️  Please fix the issues above before running the main script.")
+        print("\n Please fix the issues above before running the main script.")
         return 1
 
 if __name__ == '__main__':
